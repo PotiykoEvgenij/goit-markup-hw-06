@@ -484,8 +484,42 @@ footer {
     fill: var(--light-color);
 }
 
-/* Modal page */
+/* Subscribe */
 
+.form-subscribe {
+    margin-top: 0;
+    margin-left: 80px;
+}
+.icon-subscribe {
+    width: 24px;
+    height: 24px;
+}
+.title-subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.mail-input{
+    display: inline-block;
+    height: 40px;
+    align-items: center;
+}
+.button-subscribe {
+    height: 40px;
+    align-items: center;
+}
+
+/* Modal page */
+label, input {
+    display: block;
+}
+textarea {
+    resize: none;
+}
 .title-modal {
     text-align: center;
     color: var(--caption-color);
