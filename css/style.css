@@ -644,6 +644,10 @@ footer {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus {
     border-color: var(--primary-brand);
@@ -658,6 +662,10 @@ footer {
     bottom: 14px;
     left: 19px;
     fill: #2E2F42;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea {
     resize: none;
@@ -666,6 +674,10 @@ footer {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+    
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea:focus {
     border-color: var(--primary-brand);
