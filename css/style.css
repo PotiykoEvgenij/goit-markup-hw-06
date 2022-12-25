@@ -640,19 +640,24 @@ footer {
 }
 .form-input {
     height: 40px;
-    padding: 8px 16px;
+    padding-left: 34px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: none;
 }
-/* .form-input:focus {
-    border: 1px solid var(--primary-brand);
-} */
+.form-input:focus {
+    border-color: var(--primary-brand);
+}
+.form-input:focus + .input-ico {
+    fill: var(--primary-brand);
+}
 .input-ico {
     position: absolute;
     width: 12px;
     height: 12px;
     bottom: 14px;
     left: 19px;
+    fill: #2E2F42;
 }
 .form-textarea {
     resize: none;
@@ -660,6 +665,10 @@ footer {
     padding: 8px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: none;
+}
+.form-textarea:focus {
+    border-color: var(--primary-brand);
 }
 .form-textarea::placeholder {
     font-weight: 400;
