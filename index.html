@@ -361,11 +361,11 @@
             </div>
             <!-- Subscribe -->
             <form name="subscribe" class="form-subscribe">
-                <label for="Subscribe">
+                <label for="subscribe">
                     <h3 class="title-subscribe">Subscribe</h3>
                 </label>
                 <div class="input-buttom">
-                    <input type="email" name="email" id="email" class="mail-input" placeholder="E-mail" required>
+                    <input type="email" name="email" id="subscribe" class="mail-input" placeholder="E-mail" required>
                     <button type="submit" class="button-subscribe">
                         Subscribe
                         <svg class="icon-subscribe">
@@ -388,19 +388,28 @@
             <form name="order-service" class="form-modal">
                 <div class="form-field">
                     <label for="user-name" class="title-form">Name</label>
-                    <input type="text" name="name" id="user-name" required>
+                    <svg class="input-ico">
+                        <use href="./images/icons.svg#icon-user"></use>
+                    </svg>
+                    <input type="text" name="name" id="user-name" class="form-input" required>
                 </div>
                 <div class="form-field">
                     <label for="user-phone" class="title-form">Phone</label>
-                    <input type="tel" name="phone" id="user-phone" required>
+                    <svg class="input-ico">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    <input type="tel" name="phone" id="user-phone" class="form-input" required>
                 </div>
                 <div class="form-field">
                     <label for="user-email" class="title-form">Email</label>
-                    <input type="email" name="email" id="user-email" required>
+                    <svg class="input-ico">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                    <input type="email" name="email" id="user-email" class="form-input" required>
                 </div>
                 <div class="form-field">
                     <label for="user-comment" class="title-form">Comment</label>
-                    <textarea name="comment" id="user-comment" rows="4" placeholder="Text input"></textarea>
+                    <textarea name="comment" id="user-comment" rows="4" placeholder="Text input" class="form-textarea"></textarea>
                 </div>
                 <input type="checkbox" name="privacy-policy" value="privacy-policy" id="privacy-policy" class="privacy-policy-checkbox" required>
                 <label for="privacy-policy" class="privacy-policy-text">
