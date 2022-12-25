@@ -490,10 +490,6 @@ footer {
     margin-top: 0;
     margin-left: 80px;
 }
-.icon-subscribe {
-    width: 24px;
-    height: 24px;
-}
 .title-subscribe {
     font-weight: 500;
     font-size: 16px;
@@ -503,32 +499,49 @@ footer {
     margin-top: 0;
     margin-bottom: 16px;
 }
+.input-buttom {
+    display: flex;
+    justify-content: center;
+}
 .mail-input{
+    justify-content: center;
     display: inline-block;
     height: 40px;
-    align-items: center;
 }
 .button-subscribe {
+    display: flex;
+    margin-left: 24px;
     height: 40px;
-    align-items: center;
-}
-
-/* Modal page */
-label, input {
-    display: block;
-}
-textarea {
-    resize: none;
-}
-.title-modal {
-    text-align: center;
-    color: var(--caption-color);
+    padding: 8px 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    margin: 72px 24px;
-    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background-color: var(--primary-brand);
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color: #404BBF;
+}
+
+.icon-subscribe {
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    align-items: center;
+    fill: #FFFFFF;
+}
+
+/* Modal page */
+
 .modal-bg {
     position: fixed;
     top: 0;
@@ -592,6 +605,59 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     fill: 000000;
+}
+
+/* Form Modal */
+
+/* label,
+input {
+    display: block;
+} */
+.form-modal {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.title-form {
+    color: #8E8F99;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    padding-bottom: 4px;
+}
+textarea {
+    resize: none;
+}
+.title-modal {
+    text-align: center;
+    color: var(--caption-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 72px 24px;
+    margin-bottom: 16px;
+}
+.privacy-policy-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #757575;
+    margin-top: 16px;
+}
+.link-privacy-policy {
+    display: inline-block;
+    color: var(--primary-brand);
+}
+.button-send {
+    display: block;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Portfolio */
