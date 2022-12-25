@@ -364,13 +364,15 @@
                 <label for="Subscribe">
                     <h3 class="title-subscribe">Subscribe</h3>
                 </label>
-                <input type="email" name="email" id="email" class="mail-input"required>
-                <button type="submit" class="button-subscribe">
-                    Subscribe
-                    <svg class="icon-subscribe">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                </button>
+                <div class="input-buttom">
+                    <input type="email" name="email" id="email" class="mail-input" placeholder="E-mail" required>
+                    <button type="submit" class="button-subscribe">
+                        Subscribe
+                        <svg class="icon-subscribe">
+                            <use href="./images/icons.svg#icon-subscrbe"></use>
+                        </svg>
+                    </button>
+                </div>
             </form>
         </div>       
     </footer>
@@ -383,18 +385,31 @@
                 </svg>
             </button>
             <h3 class="title-modal">Leave your contacts and we will call you back</h3>
-            <form name="order-service">
-                <label for="user-name">Name</label>
-                <input type="text" name="name" id="user-name" required>
-                <label for="user-phone">Phone</label>
-                <input type="tel" name="phone" id="user-phone" required>
-                <label for="user-email">Email</label>
-                <input type="email" name="email" id="user-email" required>
-                <label for="user-comment">Comment</label>
-                <textarea name="comment" id="user-comment" rows="4" placeholder="Text input"></textarea>
-                <input type="checkbox" name="privacy-policy" value="privacy-policy" id="privacy-policy" required>
-                <label for="privacy-policy">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
-                <button type="submit">Send</button>               
+            <form name="order-service" class="form-modal">
+                <div class="form-field">
+                    <label for="user-name" class="title-form">Name</label>
+                    <input type="text" name="name" id="user-name" required>
+                </div>
+                <div class="form-field">
+                    <label for="user-phone" class="title-form">Phone</label>
+                    <input type="tel" name="phone" id="user-phone" required>
+                </div>
+                <div class="form-field">
+                    <label for="user-email" class="title-form">Email</label>
+                    <input type="email" name="email" id="user-email" required>
+                </div>
+                <div class="form-field">
+                    <label for="user-comment" class="title-form">Comment</label>
+                    <textarea name="comment" id="user-comment" rows="4" placeholder="Text input"></textarea>
+                </div>
+                <input type="checkbox" name="privacy-policy" value="privacy-policy" id="privacy-policy" class="privacy-policy-checkbox" required>
+                <label for="privacy-policy" class="privacy-policy-text">
+                    I accept the terms and conditions of the 
+                    <a href="" class="link-privacy-policy">
+                        Privacy Policy
+                    </a>
+                </label>
+                <button type="submit" class="button-send">Send</button>               
             </form>
         </div>
     </div>
