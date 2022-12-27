@@ -301,7 +301,6 @@ img {
 
 .cards-team  {
     background-color: var(--light-color);
-    max-width: 1440px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -415,7 +414,6 @@ img {
 
 footer {
     background-color: var(--caption-color);
-    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -635,7 +633,7 @@ footer {
 /* Form Modal */
 
 .form-modal {
-    width: 360px;
+    padding: 72px 24px 24px 24px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -643,7 +641,7 @@ footer {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 .title-form {
     color: #8E8F99;
@@ -708,9 +706,9 @@ footer {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    margin: 72px 24px;
-    margin-bottom: 16px;
-}
+    margin: 0;
+    padding-bottom: 16px;
+}   
 /* privacy-policy */
 .privacy-policy {
     position: relative;
