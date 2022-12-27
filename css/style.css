@@ -710,7 +710,7 @@ footer {
     padding-bottom: 16px;
 }   
 /* privacy-policy */
-.privacy-policy {
+.privacy {
     position: relative;
     display: flex;
 }
@@ -742,7 +742,7 @@ footer {
     display: inline-block;
     color: var(--primary-brand);
 }
-.privacy::before {
+.privacy-policy::before {
     position: absolute;
     content: '';
     left: 0;
@@ -764,7 +764,7 @@ footer {
     height: 8px;
     top: 4px;
     left: 3px;
-    opacity: 1;
+    opacity: 0;
     fill: var(--light-color);
     cursor: pointer;
 
@@ -772,7 +772,7 @@ footer {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.privacy-policy-checkbox:checked + .privacy-policy-text::before {
+.privacy-policy-checkbox:checked + .privacy-policy::before {
     background-color: var(--primary-brand);
     border-color: var(--primary-brand);
     opacity: 1;
