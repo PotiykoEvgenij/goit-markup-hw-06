@@ -42,8 +42,8 @@
     </header>
     <main>
         <!-- Section1 -->
-        <div class="container">
-            <section class="direction">
+        <section class="direction">
+            <div class="container">
                 <h2 class="hidden-title">Direction</h2>
                 <ul class="direction-list">
                     <li>
@@ -91,11 +91,11 @@
                         </p>
                     </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
         <!-- Section2 -->
-        <div class="container skills">
-            <section>
+        <section>
+            <div class="container skills">
                 <h2 class="section-title">What are we doing</h2>
                 <ul class="skills-img">
                     <li class="skill-img">
@@ -108,8 +108,8 @@
                         <img src="./images/img3.jpg" alt="adaptivity" width="360" height="300">
                     </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
         <!-- Section3 -->
         <section class="cards-team">
             <div class="container">
@@ -384,33 +384,41 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <h3 class="title-modal">Leave your contacts and we will call you back</h3>
             <form name="order-service" class="form-modal">
-                <div class="form-field">
-                    <label for="user-name" class="title-form">Name</label>
-                    <input type="text" name="name" id="user-name" class="form-input" required>
+                <p class="title-modal">Leave your contacts and we will call you back</p>
+                <label class="form-field">
+                    <span class="title-form">
+                        Name
+                    </span>
+                    <input type="text" name="name" class="form-input" required>
                     <svg class="input-ico">
                         <use href="./images/icons.svg#icon-user"></use>
                     </svg>
-                </div>
-                <div class="form-field">
-                    <label for="user-phone" class="title-form">Phone</label>
-                    <input type="tel" name="phone" id="user-phone" class="form-input" required>
+                </label>
+                <label class="form-field">
+                    <span class="title-form">
+                        Phone
+                    </span>
+                    <input type="tel" name="phone" class="form-input" required>
                     <svg class="input-ico">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
-                </div>
-                <div class="form-field">
-                    <label for="user-email" class="title-form">Email</label>
-                    <input type="email" name="email" id="user-email" class="form-input" required>
+                </label>
+                <label class="form-field">
+                    <span class="title-form">
+                        Email
+                    </span>
+                    <input type="email" name="email" class="form-input" required>
                     <svg class="input-ico">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
-                </div>
-                <div class="form-field">
-                    <label for="user-comment" class="title-form">Comment</label>
+                </label>
+                <label class="form-field">
+                    <span class="title-form">
+                        Comment
+                    </span>
                     <textarea name="comment" id="user-comment" rows="4" placeholder="Text input" class="form-textarea"></textarea>
-                </div>
+                </label>
                 <div class="privacy-policy">
                     <input type="checkbox" name="privacy-policy" value="privacy-policy" id="privacy-policy" class="privacy-policy-checkbox"
                         required>
